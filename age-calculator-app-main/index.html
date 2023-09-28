@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  
+<div class="container">
+<span class="legendas">
+  <p id="um">D A Y</p><p id="pdois">M O N T H</p><p id="ptres">Y E A R</p>
+</span>
+<span class="container2">
+<span class="caixa">
+  <input type="number" name="txtdia" id="txtdia" class="inputs" placeholder="DD">
+  <span class="aviso" id="avisoum"></span></span>
+  <span class="caixa">
+  <input type="number" name="txtmes" id="txtmes"  class="inputs" placeholder="MM">
+  <span class="aviso" id="avisodois"></span></span>
+  <span class="caixa">
+  <input type="number" name="txtano" id="txtano"  class="inputs" placeholder="YYYY">
+  <span class="aviso" id="avisotres"></span></span>
+</span>
+  <div class="icones">
+  <div class="linha"></div>
+  <button class="circulo" type="submit"><img src="assets/images/icon-arrow.svg" alt="seta" onclick="calcular()"></button>
+  <div class="linha2"></div>
+</div>
+  <h1><span style="color: hsl(259, 100%, 65%)" id="resano">- -</span> years<br>
+  <span style="color: hsl(259, 100%, 65%)" id="resmes">- -</span> months<br>
+  <span style="color: hsl(259, 100%, 65%)" id="resdia">- -</span> days</h1>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/nicolisartori">Nicoli Rotella Sartori</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
